@@ -1,0 +1,13 @@
+services:
+  database:
+    image: shawntrznadel/hack-me-silly-postgres-db
+    ports:
+      - 5432:5432
+  server:
+    image: shawntrznadel/hack-me-silly-server
+    ports:
+      - 3001:3001
+  app:
+    image: shawntrznadel/hack-me-silly
+    ports:
+     - 3000:80
